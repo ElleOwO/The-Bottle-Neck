@@ -103,6 +103,9 @@ function createNoteElement(id, content) {
     element.value = content;
     element.placeholder = "Click to edit. Double Click to delete.";
 
+    element.style.height = "20px";
+
+
     element.addEventListener("change", () => {
         updateNote(id, element.value);
     });
@@ -116,6 +119,19 @@ function createNoteElement(id, content) {
             deleteNote(id, element);
         }
     });
+
+
+    // Add input event listener to handle resizing
+    element.addEventListener("input", () => {
+        element.style.height = "auto"; // Reset the height
+        element.style.height = element.scrollHeight + "px"; // Set the height based on content
+    });
+
+    // Trigger initial resizing
+    element.style.height = "auto"; // Reset the height
+    element.style.height = element.scrollHeight + "px"; // Set the height based on content
+
+    return element;
 
     return element;
 }
