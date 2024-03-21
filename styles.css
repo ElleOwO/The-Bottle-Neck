@@ -108,9 +108,10 @@ body {
     white-space: nowrap;
     border-right: 2px solid;
     width: auto;
-    -webkit-animation: fadeIn  4s   ;
-    -moz-animation: fadeIn  4s ;
-    animation: fadeIn 4s, typing 1s steps(10, end) forwards ;
+    -webkit-animation: fadeIn  5s ease infinite, typing 1s steps(10, end) forwards, blinking 1s infinite;
+    -moz-animation: fadeIn  5s ease infinite, typing 1s steps(10, end) forwards, blinking 1s infinite;
+    opacity: 0;
+;
 }
 
 @keyframes typing {
@@ -118,18 +119,15 @@ body {
     to { width: 100% }
 }
 
-@keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+@keyframes blinking {
+    0% {border-color: transparent}
+    50% {border-color: white}
+    100% {border-color: transparent}
 }
 
-.button {
-    background-color: black;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+@keyframes fadeIn {
+    0%, 100% {opacity: 60%}
+    50%{opacity: 100%}
+
 }
+
