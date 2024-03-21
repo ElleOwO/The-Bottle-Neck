@@ -3,15 +3,58 @@ body {
     background-color: white;
     color: black;
     font-size: 25px;
+    min-height: 100vh;
+    max-width: 400px;
 }
-
-.slide2 {
-    background-color: black;
-    color: white;
+.slide1{
+    background-color: white;
 }
+/*.slide2 {*/
+/*    background: linear-gradient(270deg, #000000, #ffffff);*/
+/*    color: white;*/
+/*}*/
 .slide3 {
     background-color: pink;
     color: white;
+}
+
+/* Fading animation */
+.slide2 {
+    background: rgb(0,0,0);
+    background: linear-gradient(270deg, rgba(0,0,0,1) 60%, rgba(255,255,255,1) 100%);
+    color: white;
+    background-size: 1000% 1000%;
+
+    -webkit-animation: AnimationName 2s ease forwards  ;
+    -moz-animation: AnimationName 2s ease forwards ;
+    animation: AnimationName 2s ease forwards;
+}
+@-webkit-keyframes AnimationName {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+
+}
+@-moz-keyframes AnimationName {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+}
+@keyframes AnimationName {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+}
+
+h1 {
+    color: green;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .button {
