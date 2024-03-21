@@ -12,16 +12,24 @@ body {
 }
 
 .slide2 {
-    background: rgb(0,0,0);
-    background: linear-gradient(270deg, rgba(16, 16, 16,1) 60%, rgba(0,0,0,1) 100%);
+
+    /*background: rgb(0,0,0);*/
+    /*background: linear-gradient(270deg, rgba(16, 16, 16,1) 50%, rgba(0,0,0,1) 100%);*/
+    background: radial-gradient(ellipse at 50% 50%, rgba(16, 16, 16,1) 50%, rgba(0,0,0,1) 100%);
+    background: -webkit-radial-gradient(ellipse at 50% 50%, #20202D 0%, #101018 50%, #060612 100%);
+    background: -moz-radial-gradient(ellipse at 50% 50%, #20202D 0%, #101018 50%, #060612 100%);
     color: white;
     background-size: 1000% 1000%;
 
-    -webkit-animation: slide2fade 4s ease forwards  ;
+    color: white;
+    background-size: 1000% 1000%;
+
+    -webkit-animation: slide2fade 4s ease forwards ;
     -moz-animation: slide2fade 4s ease forwards ;
     animation: slide2fade 4s ease forwards;
 }
 @-webkit-keyframes slide2fade {
+
     0% { background-position: 0 100%; }
     100% { background-position: 100%; }
 
@@ -81,19 +89,38 @@ body {
     100% { background-position: 100%; }
 }
 
+.container{
+    font-size: 24px;
+    place-items: center;
+    width:auto;
+    /*overflow: auto;*/
+    /*position: absolute;*/
+    /*what makes the width the size of content*/
+    display: inline-block;
 
-h1 {
-    color: green;
+}
+.mySlides{
+    width: auto;
 }
 
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
+.caption {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: auto;
+    -webkit-animation: fadeIn  4s   ;
+    -moz-animation: fadeIn  4s ;
+    animation: fadeIn 4s, typing 1s steps(10, end) forwards ;
+}
 
-    100% {
-        opacity: 1;
-    }
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 .button {
