@@ -42,7 +42,7 @@
     "Node.js.script.js.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "stage2",
     "kotlin-language-version-configured": "true",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -62,7 +62,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710952939345</updated>
-      <workItem from="1710952940444" duration="22709000" />
+      <workItem from="1710952940444" duration="26024000" />
     </task>
     <servers />
   </component>

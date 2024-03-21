@@ -7,29 +7,21 @@ body {
     max-width: 400px;
 }
 .slide1{
-    background-color: white;
-}
-/*.slide2 {*/
-/*    background: linear-gradient(270deg, #000000, #ffffff);*/
-/*    color: white;*/
-/*}*/
-.slide3 {
-    background-color: pink;
+    background-color: black;
     color: white;
 }
 
-/* Fading animation */
 .slide2 {
     background: rgb(0,0,0);
-    background: linear-gradient(270deg, rgba(0,0,0,1) 60%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(270deg, rgba(16, 16, 16,1) 60%, rgba(0,0,0,1) 100%);
     color: white;
     background-size: 1000% 1000%;
 
-    -webkit-animation: AnimationName 2s ease forwards  ;
-    -moz-animation: AnimationName 2s ease forwards ;
-    animation: AnimationName 2s ease forwards;
+    -webkit-animation: slide2fade 4s ease forwards  ;
+    -moz-animation: slide2fade 4s ease forwards ;
+    animation: slide2fade 4s ease forwards;
 }
-@-webkit-keyframes AnimationName {
+@-webkit-keyframes slide2fade {
     0% { background-position: 0 100%; }
     100% { background-position: 100%; }
 
@@ -38,10 +30,57 @@ body {
     0% { background-position: 0 100%; }
     100% { background-position: 100%; }
 }
-@keyframes AnimationName {
+@keyframes slide2fade {
     0% { background-position: 0 100%; }
     100% { background-position: 100%; }
 }
+.slide3 {
+    background: rgb(0,0,0);
+    background: linear-gradient(270deg, rgba(32, 32, 32,1) 60%, rgba(16, 16, 16,1) 100%);
+    color: white;
+    background-size: 1000% 1000%;
+
+    -webkit-animation: slide3fade 4s ease forwards  ;
+    -moz-animation: slide3fade  4s ease forwards ;
+    animation: slide3fade  4s ease forwards;
+}
+@-webkit-keyframes slide3fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+
+}
+@-moz-keyframes slide3fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+}
+@keyframes slide3fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+}
+.slide4 {
+    background: rgb(0,0,0);
+    background: linear-gradient(270deg, rgba(64, 64, 64,1) 60%, rgba(32, 32, 32,1) 100%);
+    color: white;
+    background-size: 1000% 1000%;
+
+    -webkit-animation: slide4fade 4s ease forwards  ;
+    -moz-animation: slide4fade  4s ease forwards ;
+    animation: slide4fade  4s ease forwards;
+}
+@-webkit-keyframes slide4fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+
+}
+@-moz-keyframes slide4fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+}
+@keyframes slide4fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+}
+
 
 h1 {
     color: green;

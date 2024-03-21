@@ -1,64 +1,48 @@
 function myFunction() {
     var element = document.body;
     element.classList.toggle("dark-mode");
-}
-//param n: controls the css colors
+} //example function for night toggle
+
+
 let slideIndex = 1;
-//call to show slide on page
+//call to show slide color and numbers on page
 showSlides(slideIndex);
 
 // Next/previous controls
-//increments the slide index
+//increments the slide index to go to next slide
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
+
+//subtracts slideIndex to go to previous slide
 function minusSlides(n) {
 
     showminusSlides(slideIndex += n);
 }
 
-// function minusSlides(n){
-//     showSlides(slideIndex -= n);
-// }
 
 // Thumbnail image controls
 function currentSlide(n) {
-    // if (n<1){
-    //     n=1;
-    // }
     showSlides(slideIndex = n);
 }
-
-
-
-
 
 
 function showSlides(n) {
     let i;
     let element = document.body;
-
+    //default state for slide 1
+    element.classList.add("slide1");
 
     //indicates the current css
     let slides = document.getElementsByClassName("mySlides");
     let dots = document.getElementsByClassName("dot");
 
-    //button clicked n state, if n greater than 1, index restarts
-
-    //
     if (n < 1) {slideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {
 
-
         slides[i].style.display = "none";
         element.classList.add("slide" + slideIndex);
-        element.classList.remove("slide" + (n-1));
-        if (n<1){
-            for (i=0;i<slides.length; i++){
-                element.classList.remove("slide" + (slideIndex+1));
-
-            }
-        }
+        element.classList.remove("slide" + (slideIndex-1));
 
     }
 
@@ -70,25 +54,28 @@ function showSlides(n) {
     // console.log("n: " + n);
     // console.log("i: " + i);
     // console.log("slideindex:" + slideIndex)
-    }
+}
 
 function showminusSlides(n) {
+    //element: holds the element changer
+    //n: the on click position
+    //slideIndex:the index for the current page in the slide list
+    //slides: holds the list of divs used as each slide
+
     let i;
     let element = document.body;
-
+    element.classList.add("slide1");
 
     //indicates the current css
     let slides = document.getElementsByClassName("mySlides");
     let dots = document.getElementsByClassName("dot");
 
-    //button clicked n state, if n greater than 1, index restarts
 
     if (n < 1) {
         slideIndex = slides.length;
     } else if (n > slides.length) {
         slideIndex = 1;
     }    for (i = 0; i < slides.length; i++) {
-
 
         slides[i].style.display = "none";
         element.classList.add("slide" + slideIndex);
