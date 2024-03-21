@@ -1,0 +1,60 @@
+body{
+    margin:0;
+
+
+    background: linear-gradient(330deg,#000000,#121312,#1c1d1c,#a2a4a2);
+    background-size: 1000% 1000%;
+    animation: gradient-animation 20s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#app {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 24px;
+    height: 500px;
+    justify-content: flex-start;
+    align-content: center;
+    padding-top: 100px;
+    align-self: flex-start;
+}
+
+.notes{
+    /*box-sizing: border-box;*/
+    padding: 2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 7px rgba(0,0,0, 0.15);
+    font-size: clamp(1rem, 10vmin, 6rem);
+    height: 400px;
+    inset: 0;
+    display: flex;
+}
+
+.add-note{
+    border: none;
+    outline: none;
+    background: rgb(86,86,86);
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 15px;
+    color: rgba(0,0,0,0.5);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.add-note:hover{
+    opacity: 30%;
+    color: #a2a4a2;
+}
