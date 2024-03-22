@@ -144,10 +144,17 @@
     </div>
 </div>
 
-<audio controls autoplay>
+<audio autoplay loop id="song" alt="Music track: Frozen Worlds by Project Ex
+Source: https://freetouse.com/music">
     <source src="projectex-newworlds-remix.mp3" type="audio/mp3">
 </audio>
 
+<div class="controls">
+    <div onclick="playPause()">
+        <img class="play" alt="play audio by icons8" src="no-audio-icon.png">
+    </div>
+</div>
+<div id="overlay"></div>
 </body>
 </html>
 <!--shift+cmd+option-->

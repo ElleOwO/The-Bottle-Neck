@@ -90,22 +90,6 @@ function showminusSlides(n) {
     // console.log("slideindex:" + slideIndex)
 }
 
-// function contButton(){
-//         document.getElementById("commentBox").style.display="block"
-//     event.stopPropagation(); // Prevent click event propagation
-//
-//
-// }
-// //Event listener to close the comment box when clicking outside of it
-// document.addEventListener("click", function(event) {
-//     var commentBox = document.getElementById("commentBox");
-//     var target = event.target;
-//
-//     // Check if the click target is outside of the commentBox
-//     if (!commentBox.contains(target)) {
-//         commentBox.style.display = "none";
-//     }
-// });
 
 function contButton(event) {
     var commentBox = document.getElementById("commentBox");
@@ -123,3 +107,20 @@ document.addEventListener("click", function(event) {
         commentBox.style.display = "none";
     }
 });
+
+//audio controls
+let song = document.getElementById("song");
+let ctrlIcon = document.getElementById("ctrlIcon")
+function playPause() {
+    let song = document.getElementById("song");
+    let playButton = document.querySelector(".play");
+
+    if (song.paused) {
+        song.play();
+        playButton.src = "audio-icon.png"; // Update the play button icon
+    } else {
+        song.pause();
+        playButton.src = "no-audio-icon.png"; // Update the pause button icon
+    }
+}
+
