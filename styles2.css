@@ -6,6 +6,13 @@ body{
     background-size: 1000% 1000%;
     animation: gradient-animation 20s ease infinite;
 }
+.slideContainer{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
 
 @keyframes gradient-animation {
     0% {

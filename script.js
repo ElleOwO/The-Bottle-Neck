@@ -88,6 +88,38 @@ function showminusSlides(n) {
     // console.log("n: " + n);
     // console.log("i: " + i);
     // console.log("slideindex:" + slideIndex)
-
 }
 
+// function contButton(){
+//         document.getElementById("commentBox").style.display="block"
+//     event.stopPropagation(); // Prevent click event propagation
+//
+//
+// }
+// //Event listener to close the comment box when clicking outside of it
+// document.addEventListener("click", function(event) {
+//     var commentBox = document.getElementById("commentBox");
+//     var target = event.target;
+//
+//     // Check if the click target is outside of the commentBox
+//     if (!commentBox.contains(target)) {
+//         commentBox.style.display = "none";
+//     }
+// });
+
+function contButton(event) {
+    var commentBox = document.getElementById("commentBox");
+    commentBox.style.display = commentBox.style.display === "block" ? "none" : "block";
+    event.stopPropagation(); // Prevent click event propagation
+}
+
+// Event listener to close the comment box when clicking outside of it
+document.addEventListener("click", function(event) {
+    var commentBox = document.getElementById("commentBox");
+    var target = event.target;
+
+    // Check if the click target is outside of the commentBox
+    if (!commentBox.contains(target)) {
+        commentBox.style.display = "none";
+    }
+});

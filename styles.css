@@ -3,17 +3,34 @@ body {
     background-color: white;
     font-size: 25px;
     min-height: 100vh;
-    max-width: 400px;
+    max-width: 100%;
+    /*display: flex;*/
+    /*align-content: center;*/
+    /*justify-items: center;*/
 }
+
+.slideContainer{
+    justify-content: center;
+    align-content: center;
+    alignment-baseline: center;
+    display: flex;
+    padding-top: 25%;
+    flex-direction: column;
+}
+#prev-next{
+    display: flex;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 10px;
+}
+
 .slide1{
     background-color: black;
     color: white;
 }
-
 .slide2 {
-
-    /*background: rgb(0,0,0);*/
-    /*background: linear-gradient(270deg, rgba(16, 16, 16,1) 50%, rgba(0,0,0,1) 100%);*/
     background: radial-gradient(ellipse at 50% 50%, rgba(16, 16, 16,1) 50%, rgba(0,0,0,1) 100%);
     background: -webkit-radial-gradient(ellipse at 50% 50%, #20202D 0%, #101018 50%, #060612 100%);
     background: -moz-radial-gradient(ellipse at 50% 50%, #20202D 0%, #101018 50%, #060612 100%);
@@ -86,27 +103,367 @@ body {
 }
 
 .slide5 {
+    background: radial-gradient(ellipse at 50% 50%, rgba(16, 16, 16,1) 50%, rgba(64, 64, 64,1) 100%);
+    background: -webkit-radial-gradient(ellipse at 50% 50%, #20202D 0%, #101018 50%, #060612 100%);
+    background: -moz-radial-gradient(ellipse at 50% 50%, #20202D 0%, #101018 50%, #060612 100%);
+    color: white;
+    background-size: 1000% 1000%;
+
+    -webkit-animation: slide5fade 4s ease forwards ;
+    -moz-animation: slide5fade 4s ease forwards ;
+    animation: slide5fade 4s ease forwards;
+}
+@-webkit-keyframes slide5fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+
+}
+@-moz-keyframes slide5fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+}
+@keyframes slide5fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+}
+.slide6 {
+    background: radial-gradient(ellipse at 50% 50%,  rgba(32, 32, 32,1) 50%, rgba(16, 16, 16,1) 100%);
+    background: -webkit-radial-gradient(ellipse at 50% 50%, #20202D 0%, #101018 50%, #060612 100%);
+    background: -moz-radial-gradient(ellipse at 50% 50%, #20202D 0%, #101018 50%, #060612 100%);
+    color: white;
+    background-size: 1000% 1000%;
+
+    -webkit-animation: slide6fade 4s ease forwards ;
+    -moz-animation: slide6fade 4s ease forwards ;
+    animation: slide6fade 4s ease forwards;
+}
+@-webkit-keyframes slide6fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+
+}
+@-moz-keyframes slide6fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+}
+@keyframes slide6fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+}
+.slide7 {
+    background: radial-gradient(ellipse at 50% 50%, rgba(64, 64, 64,1) 50%, rgba(32, 32, 32,1) 100%);
+    background: -webkit-radial-gradient(ellipse at 50% 50%, #20202D 0%, #101018 50%, #060612 100%);
+    background: -moz-radial-gradient(ellipse at 50% 50%, #20202D 0%, #101018 50%, #060612 100%);
+    color: white;
+    background-size: 1000% 1000%;
+
+    -webkit-animation: slide7fade 4s ease forwards ;
+    -moz-animation: slide7fade 4s ease forwards ;
+    animation: slide7fade 4s ease forwards;
+}
+@-webkit-keyframes slide7fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+
+}
+@-moz-keyframes slide7fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+}
+@keyframes slide7fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+}
+.slide8{
+    background: radial-gradient(ellipse at 50% 50%, rgba(16, 16, 16,1) 50%, rgba(64, 64, 64,1) 100%);
+    background: -webkit-radial-gradient(ellipse at 50% 50%, #20202D 0%, #101018 50%, #060612 100%);
+    background: -moz-radial-gradient(ellipse at 50% 50%, #20202D 0%, #101018 50%, #060612 100%);
+    color: white;
+    background-size: 1000% 1000%;
+
+    -webkit-animation: slide8fade 4s ease forwards ;
+    -moz-animation: slide8fade 4s ease forwards ;
+    animation: slide8fade 4s ease forwards;
+}
+@-webkit-keyframes slid8fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+
+}
+@-moz-keyframes slide8fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+}
+@keyframes slid8fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+}
+.slide9 {
+    background: radial-gradient(ellipse at 50% 50%, rgba(16, 16, 16,1) 50%, rgba(0,0,0,1) 100%);
+    background: -webkit-radial-gradient(ellipse at 50% 50%, #20202D 0%, #101018 50%, #060612 100%);
+    background: -moz-radial-gradient(ellipse at 50% 50%, #20202D 0%, #101018 50%, #060612 100%);
+    color: white;
+    background-size: 1000% 1000%;
+
+    -webkit-animation: slide9fade 4s ease forwards ;
+    -moz-animation: slide9fade 4s ease forwards ;
+    animation: slide9fade 4s ease forwards;
+}
+@-webkit-keyframes slide9fade {
+
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+
+}
+@-moz-keyframes AnimationName {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+}
+@keyframes slide9fade {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+}
+.slide109{
+    background: rgb(0,0,0);
+    background: linear-gradient(270deg, rgba(32, 32, 32,1) 60%, rgba(16, 16, 16,1) 100%);
+    color: white;
+    background-size: 1000% 1000%;
+
+    -webkit-animation: slide10fade 4s ease forwards  ;
+    -moz-animation: slide10fade  4s ease forwards ;
+    animation: slide10fade  4s ease forwards;
+}
+@-webkit-keyframes slide10fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+
+}
+@-moz-keyframes slide10fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+}
+@keyframes slide10fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+}
+.slide11 {
+    background: radial-gradient(ellipse at 50% 50%, rgba(0,0,0,1),  rgba(16, 16, 16,1) 100%);
+    background: -webkit-radial-gradient(ellipse at 50% 50%, #20202D 0%, #101018 50%, #060612 100%);
+    background: -moz-radial-gradient(ellipse at 50% 50%, #20202D 0%, #101018 50%, #060612 100%);
+    color: white;
+    background-size: 1000% 1000%;
+
+    -webkit-animation: slide11fade 4s ease forwards ;
+    -moz-animation: slide11fade 4s ease forwards ;
+    animation: slide11fade 4s ease forwards;
+}
+@-webkit-keyframes slide11fade {
+
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+
+}
+@-moz-keyframes AnimationName {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+}
+@keyframes slide11fade {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+}
+.slide1211{
+    background: radial-gradient(ellipse at 50% 50%, rgba(16, 16, 16,1) 50%, rgba(0,0,0,1) 100%);
+    background: -webkit-radial-gradient(ellipse at 50% 50%, #20202D 0%, #101018 50%, #060612 100%);
+    background: -moz-radial-gradient(ellipse at 50% 50%, #20202D 0%, #101018 50%, #060612 100%);
+    color: white;
+    background-size: 1000% 1000%;
+
+    -webkit-animation: slide12fade 4s ease forwards ;
+    -moz-animation: slide12fade 4s ease forwards ;
+    animation: slide12fade 4s ease forwards;
+}
+@-webkit-keyframes slide12fade {
+
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+
+}
+@-moz-keyframes AnimationName {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+}
+@keyframes slide12fade {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+}
+.slide13 {
+    background: rgb(0,0,0);
+    background: radial-gradient(ellipse at 50% 50%, rgba(16, 16, 16,1) 50%, rgba(0,0,0,1) 100%);
+    background: -webkit-radial-gradient(ellipse at 50% 50%, #20202D 0%, #101018 50%, #060612 100%);
+    background: -moz-radial-gradient(ellipse at 50% 50%, #20202D 0%, #101018 50%, #060612 100%);    color: white;
+    background-size: 1000% 1000%;
+
+    -webkit-animation: slide13fade 4s ease forwards  ;
+    -moz-animation: slide13fade  4s ease forwards ;
+    animation: slide13fade  4s ease forwards;
+}
+@-webkit-keyframes slide13fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+
+}
+@-moz-keyframes slide13fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+}
+@keyframes slide13fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+}
+.slide14 {
+    background: rgb(0,0,0);
+    background: linear-gradient(270deg, rgba(32, 32, 32,1) 60%, rgba(20,20,20)100%);
+    color: white;
+    background-size: 1000% 1000%;
+
+    -webkit-animation: slide4fade 14s ease forwards  ;
+    -moz-animation: slide4fade  14s ease forwards ;
+    animation: slide4fade  414 ease forwards;
+}
+@-webkit-keyframes slide14fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+
+}
+@-moz-keyframes slide14fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+}
+@keyframes slide14fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+}
+.slide15 {
     background: rgb(0,0,0);
     background: linear-gradient(270deg, rgba(64, 64, 64,1) 60%, rgba(32, 32, 32,1) 100%);
     color: white;
     background-size: 1000% 1000%;
 
-    -webkit-animation: slide4fade 4s ease forwards  ;
-    -moz-animation: slide4fade  4s ease forwards ;
-    animation: slide4fade  4s ease forwards;
+    -webkit-animation: slide15fade 4s ease forwards  ;
+    -moz-animation: slide15fade  4s ease forwards ;
+    animation: slide15fade  4s ease forwards;
 }
-@-webkit-keyframes slide4fade  {
+@-webkit-keyframes slide15fade  {
     0% { background-position: 0 100%; }
     100% { background-position: 100%; }
 
 }
-@-moz-keyframes slide4fade  {
+@-moz-keyframes slide15fade  {
     0% { background-position: 0 100%; }
     100% { background-position: 100%; }
 }
-@keyframes slide4fade  {
+@keyframes slide15fade  {
     0% { background-position: 0 100%; }
     100% { background-position: 100%; }
+}
+.slide16 {
+    background: rgb(0,0,0);
+    background: linear-gradient(270deg, rgba(64, 64, 64,1) 60%, rgba(32, 32, 32,1) 100%);
+    color: white;
+    background-size: 1000% 1000%;
+
+    -webkit-animation: slide16fade 4s ease forwards  ;
+    -moz-animation: slide16fade  4s ease forwards ;
+    animation: slide16fade  4s ease forwards;
+}
+@-webkit-keyframes slide16fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+
+}
+@-moz-keyframes slide16fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+}
+@keyframes slide16fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+}
+.slide17 {
+    background: rgb(0,0,0);
+    background: linear-gradient(270deg, rgba(64, 64, 64,1) 60%, rgba(32, 32, 32,1) 100%);
+    color: white;
+    background-size: 1000% 1000%;
+
+    -webkit-animation: slide17fade 4s ease forwards  ;
+    -moz-animation: slide17fade  4s ease forwards ;
+    animation: slide17fade  4s ease forwards;
+}
+@-webkit-keyframes slide17fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+
+}
+@-moz-keyframes slide17fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+}
+@keyframes slide17fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+}
+.slide18 {
+    background: rgb(0,0,0);
+    background: linear-gradient(270deg, rgba(64, 64, 64,1) 60%, rgba(32, 32, 32,1) 100%);
+    color: white;
+    background-size: 1000% 1000%;
+
+    -webkit-animation: slide18fade 4s ease forwards  ;
+    -moz-animation: slide18fade  4s ease forwards ;
+    animation: slide18fade  4s ease forwards;
+}
+@-webkit-keyframes slide18fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+
+}
+@-moz-keyframes slide18fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+}
+@keyframes slide18fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+}
+.slide20 {
+    background: rgb(0,0,0);
+    background-size: 1000% 1000%;
+    color: white;
+    -webkit-animation: slide20fade 4s ease forwards  ;
+    -moz-animation: slide20fade  4s ease forwards ;
+    animation: slide20fade  4s ease forwards;
+}
+@-webkit-keyframes slide20fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+
+}
+@-moz-keyframes slide20fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+}
+@keyframes slide20fade  {
+    0% { background-position: 0 100%; }
+    100% { background-position: 100%; }
+}
+#secret-slide-20{
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+}
+#secret-slide{
+    font-size: 70px;
 }
 
 .container{
@@ -117,10 +474,13 @@ body {
     /*position: absolute;*/
     /*what makes the width the size of content*/
     display: inline-block;
+    text-align: center; /* Add this line to center the text */
+
 
 }
 .mySlides{
     width: auto;
+    text-align: center; /* Add this line to center the text */
 }
 
 .caption {
@@ -131,7 +491,7 @@ body {
     -webkit-animation: fadeIn  5s ease infinite, typing 1s steps(10, end) forwards, blinking 1s infinite;
     -moz-animation: fadeIn  5s ease infinite, typing 1s steps(10, end) forwards, blinking 1s infinite;
     opacity: 0;
-;
+
 }
 
 @keyframes typing {

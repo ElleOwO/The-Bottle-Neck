@@ -9,129 +9,145 @@
 
 </head>
 <body>
+<div class="slideContainer">
 <script src="script.js" defer></script>
-<a class="prev" onclick="minusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div id="prev-next"><a class="prev" onclick="minusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a></div>
+
 
     <div class="mySlides fade">
-        <div class="numbertext">1 / 4</div>
+        <div class="numbertext">1 / 19</div>
         <div class="container">
             <div class="caption">Help me</div>
         </div>
     </div>
 
     <div class="mySlides fade">
-        <div class="numbertext">2 / 4</div>
+        <div class="numbertext">2 / 19</div>
         <div class="container"><div class="caption">I feel empty</div></div>
 
     </div>
 
     <div class="mySlides fade">
-        <div class="numbertext">3 / 4</div>
+        <div class="numbertext">3 / 19</div>
         <div class="container">
             <div class="caption">I feel sick</div>
         </div>
     </div>
 
     <div class="mySlides fade">
-    <div class="numbertext">4 / 4</div>
+    <div class="numbertext">4 / 19</div>
     <div class="container">
         <div class="caption">I feel hopeless</div>
     </div>
     </div>
 
     <div class="mySlides fade">
-    <div class="numbertext">4 / 5</div>
+    <div class="numbertext">5 / 19</div>
     <div class="container">
         <div class="caption">I'm lonely</div>
     </div>
     </div>
 
     <div class="mySlides fade">
-        <div class="numbertext">4 / 5</div>
+        <div class="numbertext">6 / 19</div>
         <div class="container">
             <div class="caption">Why do I feel like I'm trapped</div>
         </div>
     </div>
-<div class="mySlides fade">
-    <div class="numbertext">4 / 5</div>
-    <div class="container">
-        <div class="caption">I can see the exit clearly</div>
+    <div class="mySlides fade">
+        <div class="numbertext">7 / 19</div>
+        <div class="container">
+            <div class="caption">I can see the exit clearly</div>
+        </div>
     </div>
-</div>
-<div class="mySlides fade">
-    <div class="numbertext">4 / 5</div>
-    <div class="container">
-        <div class="caption">But I just can't make it through</div>
+    <div class="mySlides fade">
+        <div class="numbertext">8 / 19</div>
+        <div class="container">
+            <div class="caption">But I just can't make it through</div>
+        </div>
     </div>
-</div>
-<div class="mySlides fade">
-    <div class="numbertext">4 / 5</div>
-    <div class="container">
-        <div class="caption">... I guess there's things I'd like to do</div>
+    <div class="mySlides fade">
+        <div class="numbertext">9 / 19</div>
+        <div class="container">
+            <div class="caption">... I guess there's things I'd like to do</div>
+        </div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">10 / 19</div>
+        <div class="container">
+            <div class="caption">Like feed my pets... Or water my plants</div>
+        </div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">11 / 19</div>
+        <div class="container">
+            <div class="caption">I have to answer my emails</div>
+        </div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">12 / 19</div>
+        <div class="container">
+            <div class="caption">I still have to message my friends</div>
+        </div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">13 / 19</div>
+        <div class="container">
+            <div class="caption">I have to shower</div>
+        </div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">14 / 19</div>
+        <div class="container">
+            <div class="caption">I'd like to go outside</div>
+        </div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">15 / 19</div>
+        <div class="container">
+            <div class="caption">Feel the sun</div>
+        </div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">16 / 19</div>
+        <div class="container">
+            <div class="caption">I want to have fun</div>
+        </div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">17 / 19</div>
+        <div class="container">
+            <div class="caption">I want to stay up all night</div>
+        </div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">18 / 19</div>
+        <div class="container">
+            <div class="caption">I never want to stop feeling this way</div>
+        </div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">19 / 19</div>
+        <div class="container">
+            <div class="caption">I'm tired now, I think I'll sleep</div>
+        </div>
+    </div>
+    <div class="mySlides fade" id="secret-slide-20">
+        <div class="numbertext">1 / 19</div>
+        <div class="container">
+            <div class="caption" id="secret-slide">Help me</div>
+            <a class="continue" onclick="contButton(event)">Continue</a>
+            <iframe style="display:none;"  id="commentBox" src="comment.html" height="1000" width="1000" title="comments"></iframe>
+
+        </div>
     </div>
 </div>
 
-<div class="mySlides fade">
-    <div class="numbertext">4 / 5</div>
-    <div class="container">
-        <div class="caption">Like feed my pets... Or water my plants</div>
-    </div>
-</div>
-<div class="mySlides fade">
-    <div class="numbertext">4 / 5</div>
-    <div class="container">
-        <div class="caption">I have to answer my emails</div>
-    </div>
-</div>
-<div class="mySlides fade">
-    <div class="numbertext">4 / 5</div>
-    <div class="container">
-        <div class="caption">I still have to message my friends</div>
-    </div>
-</div>
-<div class="mySlides fade">
-    <div class="numbertext">4 / 5</div>
-    <div class="container">
-        <div class="caption">I have to shower</div>
-    </div>
-</div>
-<div class="mySlides fade">
-    <div class="numbertext">4 / 5</div>
-    <div class="container">
-        <div class="caption">I'd like to go outside</div>
-    </div>
-</div>
-<div class="mySlides fade">
-    <div class="numbertext">4 / 5</div>
-    <div class="container">
-        <div class="caption">Feel the sun</div>
-    </div>
-</div>
-<div class="mySlides fade">
-    <div class="numbertext">4 / 5</div>
-    <div class="container">
-        <div class="caption">I want to have fun</div>
-    </div>
-</div>
-<div class="mySlides fade">
-    <div class="numbertext">4 / 5</div>
-    <div class="container">
-        <div class="caption">I want to stay up all night</div>
-    </div>
-</div>
-<div class="mySlides fade">
-    <div class="numbertext">4 / 5</div>
-    <div class="container">
-        <div class="caption">I never want to stop feeling this way</div>
-    </div>
-</div>
-<div class="mySlides fade">
-    <div class="numbertext">4 / 5</div>
-    <div class="container">
-        <div class="caption">I'm tired now, I think I'll sleep</div>
-    </div>
-</div>
+<audio controls autoplay>
+    <source src="projectex-newworlds-remix.mp3" type="audio/mp3">
+</audio>
+
 </body>
 </html>
 <!--shift+cmd+option-->
