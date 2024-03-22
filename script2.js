@@ -100,7 +100,7 @@ const allTextareas = document.querySelectorAll('textarea');
 
 allTextareas.forEach(textarea => {
     // Set minimum height to the height of the last line of text
-    textarea.style.padding = "30px";
+    textarea.style.padding = "20px";
     textarea.style.minHeight = (textarea.scrollHeight ) + "px";
 });
 function createNoteElement(id, content) {
@@ -110,6 +110,7 @@ function createNoteElement(id, content) {
     element.value = content;
     element.placeholder = "Click to edit. Double Click to delete.";
 
+    element.style.height = "min-content"; // Set initial height to fit content
 
 
     element.addEventListener("change", () => {
@@ -127,17 +128,6 @@ function createNoteElement(id, content) {
     });
 
 
-    // element.addEventListener("input", () => {
-    //     // Check if the height is less than a certain threshold
-    //     // if (element.clientHeight < 20) {
-    //     //     // If less than 50px, set it to a specific height
-    //     //     element.style.height = "min-content";
-    //     // } else {
-    //         // Otherwise, resize based on content
-    //         element.style.height = "min-content"; // Reset the height
-    //         element.style.height = element.scrollHeight + "px";        //}
-    //
-    // });
 
     element.addEventListener("input", () => {
         resizeTextarea(element);
@@ -145,6 +135,8 @@ function createNoteElement(id, content) {
 
     element.addEventListener("blur", () => {
         element.style.height = "min-content"; // Reset the height
+        location.reload();
+
     });
     return element;
 
