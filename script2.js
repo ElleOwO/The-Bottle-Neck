@@ -127,15 +127,34 @@ function createNoteElement(id, content) {
     });
 
 
-    element.addEventListener("input", () => {
+    // element.addEventListener("input", () => {
+    //     // Check if the height is less than a certain threshold
+    //     // if (element.clientHeight < 20) {
+    //     //     // If less than 50px, set it to a specific height
+    //     //     element.style.height = "min-content";
+    //     // } else {
+    //         // Otherwise, resize based on content
+    //         element.style.height = "min-content"; // Reset the height
+    //         element.style.height = element.scrollHeight + "px";        //}
+    //
+    // });
 
-            element.style.height = "min-content"; // Reset the height
-            element.style.height = element.scrollHeight + "px";        //}
+    element.addEventListener("input", () => {
+        resizeTextarea(element);
     });
 
+    element.addEventListener("blur", () => {
+        element.style.height = "min-content"; // Reset the height
+    });
     return element;
 
 }
+
+function resizeTextarea(textarea) {
+    textarea.style.height = "auto"; // Reset the height
+    textarea.style.height = textarea.scrollHeight + "px"; // Set the height based on content
+}
+
 
 function addNote() {
     const notes = getNotes();
