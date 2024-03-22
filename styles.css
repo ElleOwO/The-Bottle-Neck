@@ -820,18 +820,28 @@ iframe{
     margin-left: -20%;
 
 }
-#havfun{
+#havefun{
     opacity: 40%;
-    position: absolute;
+    /*position: absolute;*/
     /*top: -50%;*/
     /*transform: translate(-50%, -50%);*/
     /*width: auto;*/
     /*height: 150vh; /*/
 }
-
+.stayupallnight{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    opacity: 50%;
+    /*display: none;*/
+    /*animation: fadeimg ease-in-out 6s infinite;*/
+    top: -5%;
+    margin-left: -50px;
+}
 #stayup{
-    max-width: 70%;
-    max-height: 60%;
+
+
+
 }
 
 
