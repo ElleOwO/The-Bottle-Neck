@@ -27,27 +27,29 @@ body {
     gap: 20px;
     z-index: 9999;
 }
+.prev{
+    margin-left: 30px;
+    margin-right: 10px;
 
-#secretCont{
-    background: #20202D;
+
+}
+.next{
+    margin-right: 30px;
+    margin-left: 10px;
+
 }
 
 #secret-prev-next{
     position: absolute;
+    border-radius: 90%;
 
-    /*display: flex;*/
-    /*align-content: center;*/
-    /*align-self: center;*/
-    /*justify-content: center;*/
-    /*padding: 40px;*/
-    gap: 10px;
     z-index: 999999;
-    background: #20202D;
-    width: 50px;
+    background: #19191a;
+    width: 150px;
     height: 40px;
     margin-top: -104px;
-    margin-left: 98px;
-    color: #1a1a25;
+    margin-left: 50px;
+    color: #000000;
     font-size: 28px;
     cursor:pointer;
 
@@ -321,7 +323,7 @@ iframe{
     0% { background-position: 0 100%; }
     100% { background-position: 100%; }
 }
-.slide1211{
+.slide12{
     background: radial-gradient(ellipse at 50% 50%, rgba(16, 16, 16,1) 50%, rgba(0,0,0,1) 100%);
     background: -webkit-radial-gradient(ellipse at 50% 50%, #20202D 0%, #101018 50%, #060612 100%);
     background: -moz-radial-gradient(ellipse at 50% 50%, #20202D 0%, #101018 50%, #060612 100%);
@@ -486,7 +488,7 @@ iframe{
     100% { background-position: 100%; }
 }
 .slide20 {
-    background: #20202D;
+    background: #141415;
     background-size: 1000% 1000%;
     color: white;
     -webkit-animation: slide20fade 4s ease forwards  ;
@@ -517,7 +519,6 @@ iframe{
 }
 #secret-slide{
     font-size: 70px;
-    background: #20202D;
 
 
 }
@@ -559,11 +560,11 @@ iframe{
     top: 65%;
     z-index: 99999;
     position: absolute;
-    display: flex;
+    display: block;
     justify-content: center;
     align-self: center;
     align-content: center;
-    margin-left: 40px;
+    margin-left: 30px;
     cursor:pointer;
 
 }
@@ -572,12 +573,14 @@ iframe{
     font-size: xxx-large;
     align-self: center;
     opacity: 90%;
+    text-decoration: none;
+    color: inherit;
 
 
 }
 
 #restartCont{
-    z-index: 99999;
+    z-index: -1;
     position: fixed;
     justify-content: center;
     /*align-self: center;*/

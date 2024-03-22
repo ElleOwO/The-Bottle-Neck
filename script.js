@@ -91,59 +91,68 @@ function showminusSlides(n) {
 }
 
 //event listener to show comment box when clicking continue
-function contButton(event) {
-    var commentBox = document.getElementById("commentBox");
-    var continueButton = document.getElementById("continuecontain");
-    var secPrevNext = document.getElementById("secret-prev-next");
-
-
-
-    commentBox.style.display = commentBox.style.display === "block" ? "none" : "block";
-    continueButton.style.display = continueButton.style.display="none";
-
-
-    event.stopPropagation(); // Prevent click event propagation
-}
+// function contButton(event) {
+//     var commentBox = document.getElementById("commentBox");
+//
+//     var continueButton = document.getElementById("continuecontain");
+//     var secPrevNext = document.getElementById("secret-prev-next");
+//
+//
+//
+//     commentBox.style.display = commentBox.style.display === "block" ? "none" : "block";
+//     commentBox.style.display = commentBox.style.zIndex="99999";
+//
+//     secPrevNext.style.display = secPrevNext.style.zIndex="99999";
+//
+//     continueButton.style.display = continueButton.style.display="none";
+//
+//
+//     event.stopPropagation(); // Prevent click event propagation
+// }
 
 // Event listener to close the comment box when clicking outside of it
-document.addEventListener("click", function(event) {
-    var commentBox = document.getElementById("commentBox");
-    var continueButton = document.getElementById("continuecontain");
-    var secPrevNext = document.getElementById("secret-prev-next");
-    var restartButton = document.getElementById("restartCont");
-
-
-
-    var target = event.target;
-
-    // Check if the click target is outside of the commentBox
-    if (!commentBox.contains(target)) {
-        commentBox.style.display = "none";
-        // continueButton.style.display = continueButton.style.display="block";
-        secPrevNext.style.display = secPrevNext.style.display="block";
-        restartButton.style.display = restartButton.style.display="flex";
-        showRestartButtonIfContinueButtonHidden();
-
-
-
-    }
-
-    function showRestartButtonIfContinueButtonHidden() {
-        var continueButton = document.getElementById("continuecontain");
-        var restartButton = document.getElementById("restartCont");
-
-        if (continueButton.style.display === "none") {
-            restartButton.style.display = "flex";
-            restartButton.style.opacity = "1";
-
-        } else {
-            restartButton.style.display = "none";
-        }
-    }
-
-
-});
-//restarts page if restart button is triggered
+// document.addEventListener("click", function(event) {
+//     var commentBox = document.getElementById("commentBox");
+//     var continueButton = document.getElementById("continuecontain");
+//     var secPrevNext = document.getElementById("secret-prev-next");
+//     var restartButton = document.getElementById("restartCont");
+//
+//
+//
+//     var target = event.target;
+//
+//     // Check if the click target is outside of the commentBox
+//     if (!commentBox.contains(target)) {
+//         commentBox.style.display = "none";
+//         // continueButton.style.display = continueButton.style.display="block";
+//         secPrevNext.style.display = secPrevNext.style.display="block";
+//         secPrevNext.style.display = secPrevNext.style.zIndex="0";
+//
+//         restartButton.style.display = restartButton.style.display="flex";
+//         showRestartButtonIfContinueButtonHidden();
+//
+//
+//
+//     }
+//
+//     function showRestartButtonIfContinueButtonHidden() {
+//         var continueButton = document.getElementById("continuecontain");
+//         var restartButton = document.getElementById("restartCont");
+//
+//         if (continueButton.style.display === "none") {
+//             restartButton.style.display = "flex";
+//             restartButton.style.opacity = "1";
+//             restartButton.style.zIndex = "99999";
+//
+//
+//         } else {
+//             restartButton.style.display = "none";
+//         }
+//     }
+//
+//
+// });
+// //restarts page if restart button is triggered
 function restartPage() {
     location.reload(); // Reload the page
     // or
