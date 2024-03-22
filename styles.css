@@ -809,6 +809,26 @@ iframe{
     max-height: 350px;
 }
 
+.party{
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    opacity: 50%;
+    /*display: none;*/
+    /*animation: fadeimg ease-in-out 6s infinite;*/
+    top: -60%;
+    margin-left: -20%;
+
+}
+#havfun{
+    opacity: 40%;
+    position: absolute;
+    /*top: -50%;*/
+    /*transform: translate(-50%, -50%);*/
+    /*width: auto;*/
+    /*height: 150vh; /*/
+}
+
 #stayup{
     max-width: 70%;
     max-height: 60%;
