@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+
 body {
     padding: 25px;
     background-color: white;
@@ -17,6 +19,8 @@ body {
     padding-top: 20%;
     flex-direction: column;
 }
+
+
 #prev-next{
     cursor:pointer;
     display: flex;
@@ -24,21 +28,23 @@ body {
     align-self: center;
     justify-content: center;
     padding: 40px;
-
+    font-size: 40px;
     gap: 20px;
     z-index: 9999;
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 .prev{
 
-    margin: 10px, 10px, 0px, 30px;
+    /*margin: 10px, 10px, 0%px, 30px;*/
 
 
 }
-.next{
-    margin: 30px, 10px, 0px, 10px;
+    /*margin: 30px, 10px, 0%px, 10px;*/
 
 
-}
+
 
 #secret-prev-next{
     position: absolute;
@@ -48,7 +54,8 @@ body {
     background: #19191a;
     width: 150px;
     height: 40px;
-    margin-top: -104px;
+    padding-top: 50px;
+    margin-top: -120px;
     margin-left: 50px;
     color: #000000;
     font-size: 28px;
@@ -746,17 +753,35 @@ iframe{
 }
 
 
+
 /*imgs*/
+#glass{
+    z-index: 3;
+    height: 450px;
+    width: 250px;
+    margin-top: 25px;
+    margin-left: 8px;
+}
 .imgslides{
     position: absolute;
     width: 236px;
     height: 510px;
     opacity: 50%;
-    display: none;
+    /*display: none;*/
+    animation: fadeimg ease-in-out 6s infinite;
+    top: 40%;
 
 }
 #slide1img{
-    opacity: 20%;
+
+}
+
+@keyframes fadeimg {
+    0%, 100% {opacity: 40%}
+    50%{opacity: 80%}
+}
+#slide1img{
+    opacity: 40%;
     position: absolute;
 }
 
