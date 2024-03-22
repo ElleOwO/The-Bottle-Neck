@@ -21,9 +21,6 @@ body {
     color: white;
     background-size: 1000% 1000%;
 
-    color: white;
-    background-size: 1000% 1000%;
-
     -webkit-animation: slide2fade 4s ease forwards ;
     -moz-animation: slide2fade 4s ease forwards ;
     animation: slide2fade 4s ease forwards;
