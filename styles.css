@@ -24,7 +24,27 @@ body {
     justify-content: center;
     padding: 40px;
     gap: 10px;
+    z-index: 9999;
+}
+
+#secret-prev-next{
+    position: absolute;
+
+    /*display: flex;*/
+    /*align-content: center;*/
+    /*align-self: center;*/
+    /*justify-content: center;*/
+    /*padding: 40px;*/
+    gap: 10px;
     z-index: 999999;
+    background: black;
+    width: 50px;
+    height: 50px;
+    margin-top: -105px;
+    margin-left: 100px;
+    color: #20202D;
+    font-size: 28px;
+
 }
 
 .controls{
@@ -475,10 +495,15 @@ body {
     align-self: center;
     align-items: center;
     justify-content: center;
+
+
 }
 #secret-slide{
     font-size: 70px;
+
 }
+
+
 
 .container{
     font-size: 24px;
@@ -489,7 +514,6 @@ body {
     /*what makes the width the size of content*/
     display: inline-block;
     text-align: center; /* Add this line to center the text */
-
 
 }
 .mySlides{
@@ -511,6 +535,38 @@ body {
     opacity: 0;
 
 }
+
+#continuecontain{
+    top: 65%;
+    z-index: 99999;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    margin-left: 75px;
+}
+.continue{
+align-self: center;
+}
+
+#restartCont{
+    display: none;
+    z-index: 0;
+    opacity: 0;
+    position: absolute;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    margin-left: 75px;
+}
+
+#restart{
+    align-self: center;
+}
+
+
+
 
 @keyframes typing {
     from { width: 0 }
@@ -557,4 +613,50 @@ body {
     80% { transform: translate(-15%,0) }
     90% { transform: translate(10%,5%) }
     100% { transform: translate(5%,0) }
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 700px) {
+]
+#intro{
+    flex-basis: 100%;
+
+
+}
+    #app{
+        height: auto;
+        flex-direction: column-reverse;
+
+
+    }
+}
+.notes {
+    /*flex-basis: calc(50% - 12px); !* 2 columns with 24px gap *!*/
+    flex-basis: 100%; /* Single column */
+
+
+}
+
+
+/* Media query for even smaller screens */
+@media screen and (max-width: 300px) {
+    #intro{
+        /*flex-basis: 100%;*/
+
+    }
+    .flex-item:nth-of-type(1) { order: 1; }
+
+
+    #app{
+        height: auto;
+
+        flex-direction: column-reverse;
+
+
+    }
+
+    .notes {
+        flex-basis: 100%;
+    }
+
 }

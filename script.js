@@ -90,22 +90,49 @@ function showminusSlides(n) {
     // console.log("slideindex:" + slideIndex)
 }
 
-
+//event listener to show comment box when clicking continue
 function contButton(event) {
     var commentBox = document.getElementById("commentBox");
+    var continueButton = document.getElementById("continuecontain");
+    var secPrevNext = document.getElementById("secret-prev-next");
+
+
+
     commentBox.style.display = commentBox.style.display === "block" ? "none" : "block";
+    continueButton.style.display = continueButton.style.display="none";
+
+
     event.stopPropagation(); // Prevent click event propagation
 }
 
 // Event listener to close the comment box when clicking outside of it
 document.addEventListener("click", function(event) {
     var commentBox = document.getElementById("commentBox");
+    var continueButton = document.getElementById("continuecontain");
+    var secPrevNext = document.getElementById("secret-prev-next");
+    var restartButton = document.getElementById("restartCont");
+
+
+
     var target = event.target;
 
     // Check if the click target is outside of the commentBox
     if (!commentBox.contains(target)) {
         commentBox.style.display = "none";
+        // continueButton.style.display = continueButton.style.display="block";
+        secPrevNext.style.display = secPrevNext.style.display="block";
+        // restartButton.style.display = restartButton.style.display="flex";
+        // restartButton.style.display = "flex";
+        // restartButton.style.zIndex = restartButton.style.zIndex = "999999";
+        restartButton.style.opacity = restartButton.style.opacity="1";
+   
     }
+
+    // Check if the restart button is clicked
+    // if (target.id === "restart-container" || target.parentElement.id === "restart-container") {
+    //     // Reload the page
+    //     location.reload();
+    // }
 });
 
 //audio controls
