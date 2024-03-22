@@ -23,30 +23,47 @@ body{
     display: flex;
     flex-flow: column wrap;
     gap: 24px;
-    height: 500px;
+    height: 700px;
+    width: auto;
+    margin-right: 100px;
+    margin-left: 100px;
     justify-content: flex-start;
     align-content: center;
-    padding-top: 100px;
+    padding: 10% 20px 20px 20px;
     align-self: flex-start;
 }
 
+#intro{
+    padding: 30px;
+}
 .notes{
     /*box-sizing: border-box;*/
-    padding: 2rem;
-    border: none;
+    /*padding: 100px;*/
     border-radius: 10px;
     box-shadow: 0 0 7px rgba(0,0,0, 0.15);
     font-size: clamp(1rem, 10vmin, 6rem);
-    height: 400px;
+    /*height: 400px;*/
     inset: 0;
     display: flex;
+
+
 }
 
+textarea{
+    /*height: 50px;*/
+    padding: 2% 2% 0 2%;
+    background: black;
+    color: white;
+    border-radius: 30px;
+    border: none;
+
+
+}
 .add-note{
     border: none;
     outline: none;
     background: rgb(86,86,86);
-    border-radius: 10px;
+    border-radius: 20px;
     font-size: 18px;
     padding: 15px;
     color: rgba(0,0,0,0.5);

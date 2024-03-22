@@ -96,6 +96,12 @@ function saveNotes(notes) {
     localStorage.setItem("stickynotes-notes", JSON.stringify(notes));
 }
 
+const allTextareas = document.querySelectorAll('textarea');
+
+allTextareas.forEach(textarea => {
+    // Set minimum height to the height of the last line of text
+    textarea.style.minHeight = (textarea.scrollHeight ) + "px";
+});
 function createNoteElement(id, content) {
     const element = document.createElement("textarea");
 
@@ -103,7 +109,6 @@ function createNoteElement(id, content) {
     element.value = content;
     element.placeholder = "Click to edit. Double Click to delete.";
 
-    element.style.height = "20px";
 
 
     element.addEventListener("change", () => {
@@ -121,19 +126,19 @@ function createNoteElement(id, content) {
     });
 
 
-    // Add input event listener to handle resizing
     element.addEventListener("input", () => {
-        element.style.height = "auto"; // Reset the height
-        element.style.height = element.scrollHeight + "px"; // Set the height based on content
+        // Check if the height is less than a certain threshold
+        // if (element.clientHeight < 20) {
+        //     // If less than 50px, set it to a specific height
+        //     element.style.height = "min-content";
+        // } else {
+            // Otherwise, resize based on content
+            element.style.height = "min-content"; // Reset the height
+            element.style.height = element.scrollHeight + "px";        //}
     });
 
-    // Trigger initial resizing
-    element.style.height = "auto"; // Reset the height
-    element.style.height = element.scrollHeight + "px"; // Set the height based on content
-
     return element;
 
-    return element;
 }
 
 function addNote() {
