@@ -175,3 +175,19 @@ function playPause() {
     }
 }
 
+//img actions
+// Function to toggle visibility of imgslides div
+function toggleImgSlides() {
+    var imgSlidesDiv = document.querySelector('.imgslides');
+    if (imgSlidesDiv.style.display === 'none'|| imgSlidesDiv.style.display === '') {
+        imgSlidesDiv.style.display = 'block';
+    } else {
+        imgSlidesDiv.style.display = 'none';
+    }
+}
+// Add click event listener to the "click me" link
+document.getElementById('toggleButton').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default link behavior
+    toggleImgSlides(); // Call the toggleImgSlides function
+});
+

@@ -24,18 +24,19 @@ body {
     align-self: center;
     justify-content: center;
     padding: 40px;
+
     gap: 20px;
     z-index: 9999;
 }
 .prev{
-    margin-left: 30px;
-    margin-right: 10px;
+
+    margin: 10px, 10px, 0px, 30px;
 
 
 }
 .next{
-    margin-right: 30px;
-    margin-left: 10px;
+    margin: 30px, 10px, 0px, 10px;
+
 
 }
 
@@ -420,7 +421,7 @@ iframe{
 }
 .slide16 {
     background: rgb(0,0,0);
-    background: linear-gradient(270deg, rgba(64, 64, 64,1) 60%, rgba(32, 32, 32,1) 100%);
+    background: linear-gradient(270deg, rgb(55, 56, 80) 60%, rgba(32, 32, 32,1) 100%);
     color: white;
     background-size: 1000% 1000%;
 
@@ -443,7 +444,7 @@ iframe{
 }
 .slide17 {
     background: rgb(0,0,0);
-    background: linear-gradient(270deg, rgba(64, 64, 64,1) 60%, rgba(32, 32, 32,1) 100%);
+    background: linear-gradient(270deg, rgb(87, 45, 101) 60%, rgba(32, 32, 32,1) 100%);
     color: white;
     background-size: 1000% 1000%;
 
@@ -465,25 +466,62 @@ iframe{
     100% { background-position: 100%; }
 }
 .slide18 {
+    background: linear-gradient(52deg,#8d4aff, #f5ae2d,#234fad);
+
+    /*background: rgb(0,0,0);*/
+    /*background: linear-gradient(270deg, rgba(64, 64, 64,1) 60%, rgba(32, 32, 32,1) 100%);*/
+    color: white;
+    background-size: 1000% 1000%;
+    animation: gradient-animation 15s ease infinite;
+
+    /*-webkit-animation: slide18fade 4s ease forwards  ;*/
+    /*-moz-animation: slide18fade  4s ease forwards ;*/
+    /*animation: slide18fade  4s ease forwards;*/
+}
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/*@-webkit-keyframes slide18fade  {*/
+/*    0% { background-position: 0 100%; }*/
+/*    100% { background-position: 100%; }*/
+
+/*}*/
+/*@-moz-keyframes slide18fade  {*/
+/*    0% { background-position: 0 100%; }*/
+/*    100% { background-position: 100%; }*/
+/*}*/
+/*@keyframes slide18fade  {*/
+/*    0% { background-position: 0 100%; }*/
+/*    100% { background-position: 100%; }*/
+/*}*/
+.slide19 {
     background: rgb(0,0,0);
-    background: linear-gradient(270deg, rgba(64, 64, 64,1) 60%, rgba(32, 32, 32,1) 100%);
+    background: linear-gradient(270deg, rgb(19, 2, 24) 60%, rgb(0, 0, 0) 100%);
     color: white;
     background-size: 1000% 1000%;
 
-    -webkit-animation: slide18fade 4s ease forwards  ;
-    -moz-animation: slide18fade  4s ease forwards ;
-    animation: slide18fade  4s ease forwards;
+    -webkit-animation: slide19fade 4s ease forwards  ;
+    -moz-animation: slide19fade  4s ease forwards ;
+    animation: slide19fade  4s ease forwards;
 }
-@-webkit-keyframes slide18fade  {
+@-webkit-keyframes slide19fade  {
     0% { background-position: 0 100%; }
     100% { background-position: 100%; }
 
 }
-@-moz-keyframes slide18fade  {
+@-moz-keyframes slide19fade  {
     0% { background-position: 0 100%; }
     100% { background-position: 100%; }
 }
-@keyframes slide18fade  {
+@keyframes slide19fade  {
     0% { background-position: 0 100%; }
     100% { background-position: 100%; }
 }
@@ -708,6 +746,21 @@ iframe{
 }
 
 
+/*imgs*/
+.imgslides{
+    position: absolute;
+    width: 236px;
+    height: 510px;
+    opacity: 50%;
+    display: none;
+
+}
+#slide1img{
+    opacity: 20%;
+    position: absolute;
+}
+
+
 /* Media query for even smaller screens */
 @media screen and (max-width: 300px) {
     #restartCont{
@@ -738,3 +791,4 @@ iframe{
     }
 
 }
+

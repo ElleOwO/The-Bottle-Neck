@@ -1,0 +1,11 @@
+.imgslides{
+    position: absolute;
+    width: 236px;
+    height: 510px;
+    opacity: 50%;
+
+}
+#slide1img{
+    opacity: 50%;
+    position: absolute;
+}
