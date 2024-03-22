@@ -772,13 +772,23 @@ iframe{
     top: 40%;
 
 }
-#slide1img{
+.longercanvas{
+    position: absolute;
+    top: -100%;
+    max-height: 900px;
 
+}
+#slide1img{
+    blur(5px);
+}
+#stayup{
+    max-width: 100%;
+    max-height: 90%;
 }
 
 @keyframes fadeimg {
     0%, 100% {opacity: 40%}
-    50%{opacity: 80%}
+    50%{opacity: 70%}
 }
 #slide1img{
     opacity: 40%;
