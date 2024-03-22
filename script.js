@@ -121,19 +121,34 @@ document.addEventListener("click", function(event) {
         commentBox.style.display = "none";
         // continueButton.style.display = continueButton.style.display="block";
         secPrevNext.style.display = secPrevNext.style.display="block";
-        // restartButton.style.display = restartButton.style.display="flex";
-        // restartButton.style.display = "flex";
-        // restartButton.style.zIndex = restartButton.style.zIndex = "999999";
-        restartButton.style.opacity = restartButton.style.opacity="1";
-   
+        restartButton.style.display = restartButton.style.display="flex";
+        showRestartButtonIfContinueButtonHidden();
+
+
+
     }
 
-    // Check if the restart button is clicked
-    // if (target.id === "restart-container" || target.parentElement.id === "restart-container") {
-    //     // Reload the page
-    //     location.reload();
-    // }
+    function showRestartButtonIfContinueButtonHidden() {
+        var continueButton = document.getElementById("continuecontain");
+        var restartButton = document.getElementById("restartCont");
+
+        if (continueButton.style.display === "none") {
+            restartButton.style.display = "flex";
+            restartButton.style.opacity = "1";
+
+        } else {
+            restartButton.style.display = "none";
+        }
+    }
+
+
 });
+//restarts page if restart button is triggered
+function restartPage() {
+    location.reload(); // Reload the page
+    // or
+    // window.location.href = window.location.href;
+}
 
 //audio controls
 let song = document.getElementById("song");

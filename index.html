@@ -133,9 +133,9 @@
             <div class="caption">I'm tired now, I think I'll sleep</div>
         </div>
     </div>
-    <div class="mySlides fade" id="secret-slide-20">
+    <div class="mySlides fade" id="secret-slide-20" style="background: #20202D;">
         <div class="numbertext">1 / 19</div>
-        <div class="container">
+        <div class="container" id="secretCont">
             <div id="secret-prev-next"><a class="prev" onclick="minusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a></div>
 
@@ -143,10 +143,9 @@
             <div id="continuecontain" ><a class="continue" onclick="contButton(event)">Continue</a></div>
             <iframe style="display:none;"  id="commentBox" src="comment.html" height="1000" width="1000" title="comments"></iframe>
 
-            <div id="restartCont" style="display: none" top="-100%"  ><img  id="restart"  onclick="plusSlides(1)" alt="restart symbol" src="https://icons8.com/icon/T7BcGwUqQedZ/restart">
+            <div id="restartCont" style="display: none; opacity: 0%;" onclick="restartPage()"><img  id="restart"  alt="restart symbol" src="restart.png">
 <!--                class="next"-->
             </div>
-
 
         </div>
     </div>
