@@ -857,11 +857,18 @@ iframe{
 #tired{
     position: absolute;
     top:-120%;
-    filter: blur(10%);
+    filter: blur(6px);
 
+        animation: blurring  ease-in-out 4s forwards;
 }
+
+    @keyframes blurring {
+        0% {opacity: 100%}
+        100% {opacity: 20%}
+    }
 .tired{
-    filter: blur(10%);
+    filter: blur(10px);
+
 
 }
 
