@@ -776,6 +776,8 @@ iframe{
     /*display: none;*/
     animation: fadeimg ease-in-out 6s infinite;
     top: 40%;
+    filter: blur(1px);
+
 
 }
 .longercanvas{
@@ -793,6 +795,10 @@ iframe{
     width: 550px;
     height: 1000px;
     margin-left: -80%;
+    opacity: 30%;
+    filter: blur(1px);
+
+
 
 }
 #plant{
@@ -800,7 +806,12 @@ iframe{
     height: 2000px;
     width: 1000px;
     margin-left: 35vw;
-    top: -100%
+    top: -100%;
+    opacity: 50%;
+
+    filter: blur(5px);
+
+
 }
 #sitting {
     margin-left: 300px;
@@ -844,7 +855,14 @@ iframe{
 
 }
 
-#glitch
+#glitch{
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    left: -40%;
+    top: -30%;
+    opacity: 15%;
+}
 
 @keyframes fadeimg {
     0% {opacity: 20%}
