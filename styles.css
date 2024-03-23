@@ -854,9 +854,14 @@ iframe{
     top: -5%;
     margin-left: -50px;
 }
-#stayup{
+#tired{
+    position: absolute;
+    top:-120%;
+    filter: blur(10%);
 
-
+}
+.tired{
+    filter: blur(10%);
 
 }
 
