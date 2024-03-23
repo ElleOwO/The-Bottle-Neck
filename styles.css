@@ -844,10 +844,12 @@ iframe{
 
 }
 
+#glitch
 
 @keyframes fadeimg {
-    0%, 100% {opacity: 40%}
-    50%{opacity: 70%}
+    0% {opacity: 20%}
+    50% {opacity: 70%}
+    100% {opacity: 20%}
 }
 #slide1img{
     opacity: 40%;
