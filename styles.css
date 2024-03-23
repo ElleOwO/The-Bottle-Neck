@@ -789,6 +789,11 @@ iframe{
 #slide1img{
     blur(5px);
 }
+@keyframes blinking2 {
+    0% {opacity: 0; filter: blur(1px)}
+    50% {opacity: 80%; filter: blur(4px)}
+    100% {opacity: 0; filter: blur(1px)}
+}
 #dog{
     position: absolute;
     top:-30%;
@@ -862,6 +867,11 @@ iframe{
     left: -40%;
     top: -30%;
     opacity: 15%;
+}
+
+.blur{
+    animation: blinking2 2s infinite
+
 }
 
 @keyframes fadeimg {
